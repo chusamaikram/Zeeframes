@@ -38,12 +38,12 @@ export default function ServicePage({
                     <div className="relative z-[10] max-w-[797px mx-auto]">
                         <img className="absolute top-[53px] lg:top-40 left-0 md:left-25  z-[2]" src={Star} alt="star" width={46} height={46} />
                         <div className='flex flex-col items-center justify-center gap-3'>
-                            <Mainheading className="max-w-[774px]" text={main_heading} />
+                            <Mainheading className="max-w-[774px] " text={main_heading} />
                             <p
                                 className=' text-base sm:text-lg leading-[27px] max-w-[679px] text-center text_gray_495 font-[Inter] capitalize'>
                                 {hero_desc}</p>
 
-                            <div className='mt-5'>
+                            
                                 <ExternalLink
                                     path="https://calendly.com/contact-zeeframes/30min?month=2025-12"
                                     className="mt-5  hover:text-[#F3FE00] border hover:border-[#F3FE00] "
@@ -51,8 +51,6 @@ export default function ServicePage({
                                     hovertext="Book a Demo"
                                     showicon={false}
                                 />
-
-                            </div>
 
 
 

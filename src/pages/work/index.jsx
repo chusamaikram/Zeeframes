@@ -60,7 +60,7 @@ export default function Work() {
                                 className='text-base sm:text-lg leading-[27px] max-w-[571px] text-center font-[Inter] capitalize'>
                                 No matter the industry you're in, or the asset you need, we can design it for you</p>
 
-                            <div className='mt-5'>
+                            
                                 <ExternalLink
                                     path="https://calendly.com/contact-zeeframes/30min?month=2025-12"
                                     className="mt-5 hover:text-[#F3FE00] border hover:border-[#F3FE00] "
@@ -68,8 +68,6 @@ export default function Work() {
                                     hovertext="Book a Demo"
                                     showicon={false}
                                 />
-
-                            </div>
                         </div>
                     </div>
                 </div>

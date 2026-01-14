@@ -163,7 +163,7 @@ export default function HeroSection() {
                             </div>
                             <div className="flex flex-col items-center justify-center gap-3 py-12">
                                 <div className="relative">
-                                    <h1 className=" w-[330px] sm:w-[700px] lg:w-[978px] text-center font-[Geologica] uppercase font-bold text-[36px]  sm:text-[42px] lg:text-[72px]  leading-[50px] sm:leading-[64px] lg:leading-[96px]">
+                                    <h1 className=" w-[330px] sm:w-[700px] lg:w-[978px] text-center font-[Geologica] uppercase font-extrabold text-[36px]  sm:text-[42px] lg:text-[72px]  leading-[50px] sm:leading-[64px] lg:leading-[96px]">
                                         Creative Intelligence in Every Pixel
                                     </h1>
                                     <span className="absolute hidden md:block  rotate-7 top-[10px] -right-[7px] bg-[#F3FE00] py-[6px] px-2 rounded-[8px] text-[#0B0B0B] text-[12px] font-bold uppercase font-[Geologica]"> NO CODE</span>
@@ -173,17 +173,17 @@ export default function HeroSection() {
                                 <p className=" w-[319px] sm:w-full text-base text-center capitalize text-[#FFFFFF] font-[Inter]"> We craft <span className="text-[#F3FE00] font-[Plus Jakarta Sans]"> stunning</span> designs for businesses worldwide.</p>
 
                             </div>
-                            <div className=" above-glow flex items-center justify-center gap-[20px]">
+                            <div className=" above-glow flex items-center justify-center gap-[20px] mx-auto">
                                 <ExternalLink
                                     path="https://calendly.com/contact-zeeframes/30min?month=2025-12"
-                                    className=" h-[48px] bg-white border border-white text-[#0B0B0B]  font-[Plus Jakarta Sans] leading-none "
+                                    className=" h-[49px] min-w-[180px] bg-white border border-white text-[#0B0B0B]  font-[Plus Jakarta Sans] leading-none "
                                     hovertext={" Let's talk 🤙"}
                                     defaulttext={"Schedule Call"}
                                     showicon={false}
                                 />
                                 <ExternalLink
                                     path="https://www.figma.com/proto/ZVnmWStSNFPShPBIOzXAqN/Sample-Work---Products?node-id=187190-11767&p=f&t=ljXD3DpgiMiJKe8T-0&scaling=scale-down&content-scaling=fixed&page-id=187190%3A11766"
-                                    className=" h-[48px] bg-black border border-white font-[Inter] hover:border-[#F3FE00] "
+                                    className=" h-[49px] w-[152px] bg-black border border-white font-[Inter] hover:border-[#F3FE00] "
                                     hovertext={" Open "} defaulttext={"©2025 Work"}
                                     showicon={false}
                                 />

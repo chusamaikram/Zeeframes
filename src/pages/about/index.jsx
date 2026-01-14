@@ -70,7 +70,7 @@ export default function AboutUs() {
                                 <ExternalLink
                                     path="https://calendly.com/contact-zeeframes/30min?month=2025-12"
                                     defaulttext="Request a Proposal Today"
-                                    className="mt-5  hover:text-[#F3FE00] border hover:border-[#F3FE00] "
+                                    className=" hover:text-[#F3FE00] border hover:border-[#F3FE00] "
                                     showicon={false}
                                     hovertext="Book a Demo"
                                 />
