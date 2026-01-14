@@ -72,7 +72,6 @@ export default function TrendingArticle() {
                             <aside className="sm:sticky top-[100px] flex flex-col items-start gap-12">
                                 <Heading className="items-start text-start justify-start gap-3"
                                     title="Popular insights"
-                                    title_mb="mb-3"
                                     secHeading="Trending Articles You Need To Read"
                                     desc="Stay Ahead of the Curve and Dive Deep into the Must-Read Trending Articles that Keep You Informed and Inspired"
                                 />
@@ -82,6 +81,7 @@ export default function TrendingArticle() {
                                         placeholder="Search Any Insight"
                                         ShowIcon={false}
                                         Ff="font-[Inter]"
+                                        borderColor="border-white/20"
                                     />
                                     <div className="max-w-full overflow-x-auto">
                                         <ul className="flex flex-row sm:flex-col overflow-x-auto min-w-max items-center sm:items-start gap-1">
