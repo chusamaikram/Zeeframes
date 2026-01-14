@@ -19,6 +19,7 @@ export default function Header() {
   }, []);
 
   const [mobileView, setMobileview] = useState(false);
+
   const toggleMobileView = () => {
     setMobileview((prev) => !prev);
   };
@@ -68,7 +69,7 @@ export default function Header() {
                       onMouseLeave={() => setShowServicesPanel(false)}
                     >
                       <Link
-                        onClick={toggleMobileView}
+                        onClick={toggleMobileView }
                         to={link.path}
                         className={`relative text-lg font-normal flex items-center justify-center gap-2 px-4 py-2 font-[Inter] text-[18px] leading-[27px] ${isServicesActive ? "text-[#F3FE00]" : "text-white"}`}
                       >
@@ -80,7 +81,7 @@ export default function Header() {
                                      ${isServicesActive ? "w-6 opacity-100" : "w-0 opacity-0"}`}></span>
 
                       </Link>
-                      {mobileView && (
+                      {mobileView && isMobile && (
                         <div className="w-full max-h-[70vh] overflow-y-auto mt-2 pb-4 scrollbar-width-[none] [&::-webkit-scrollbar]:hidden ">
                           <Services />
 
