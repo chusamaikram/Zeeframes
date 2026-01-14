@@ -158,7 +158,7 @@ export default function ContactUs({ border_color = "border-[#F3FE00]", radius = 
                                             />
 
                                             {touched.name && errors.name && (
-                                                <p className="text-red-500 text-xs mt-1 font-medium font-[Inter] leading-[normal]">
+                                                <p className="text-red-500 opacity-80 text-xs mt-1 font-medium font-[Inter] leading-[normal]">
                                                     {errors.name}
                                                 </p>
                                             )}
@@ -174,7 +174,7 @@ export default function ContactUs({ border_color = "border-[#F3FE00]", radius = 
                                                 touched={touched.email}
                                             />
                                             {touched.email && errors.email && (
-                                                <p className="text-red-500 text-xs mt-1 font-medium font-[Inter] leading-[normal]">
+                                                <p className="text-red-500 opacity-80 text-xs mt-1 font-medium font-[Inter] leading-[normal]">
                                                     {errors.email}
                                                 </p>
                                             )}
@@ -211,7 +211,7 @@ export default function ContactUs({ border_color = "border-[#F3FE00]", radius = 
                                                     } `}
                                                 placeholder="Tell us about your project*" />
                                             {touched.message && errors.message && (
-                                                <p className="text-red-500 text-xs mt-1 font-medium font-[Inter] leading-[normal]">
+                                                <p className="text-red-500 opacity-80 text-xs mt-1 font-medium font-[Inter] leading-[normal]">
                                                     {errors.message}
                                                 </p>
                                             )}
