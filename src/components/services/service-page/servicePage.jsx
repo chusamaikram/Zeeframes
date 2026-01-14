@@ -36,7 +36,7 @@ export default function ServicePage({
 
                 <div className="container">
                     <div className="relative z-[10] max-w-[797px mx-auto]">
-                        <img className="absolute top-[53px] lg:top-40 left-0 md:left-25  z-[2]" src={Star} alt="star" width={46} height={46} />
+                        <img className="absolute top-[53px] lg:top-30 left-0 md:left-40  z-[2]" src={Star} alt="star" width={46} height={46} />
                         <div className='flex flex-col items-center justify-center gap-3'>
                             <Mainheading className="max-w-[774px] " text={main_heading} />
                             <p
