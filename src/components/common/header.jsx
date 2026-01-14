@@ -114,11 +114,11 @@ export default function Header() {
             </ul>
 
             <div className="flex items-center gap-3">
-              <button className="p-1 bg-white rounded-[12px] sm:rounded-[16px] w-[38px] sm:w-[52px] h-[24px] sm:h-[32px] cursor-pointer relative" aria-label="theme toggler">
+              {/* <button className=" p-1 bg-white rounded-[12px] sm:rounded-[16px] w-[38px] sm:w-[52px] h-[24px] sm:h-[32px] cursor-pointer relative" aria-label="theme toggler">
                 <div className="w-[20px] sm:w-[26px] h-[20px] sm:h-[26px] bg-black rounded-full absolute left-[3px] top-[3px] flex items-center justify-center">
                   <ThemeIcon />
                 </div>
-              </button>
+              </button> */}
               <Button
                 path="/contact" hovertext={" Let's talk"} defaulttext={"Work with us"}
                 className="header-btn  max-w-[190px] border border-[#f3fe00] bg-[#f3fe00] transition-[background-color,border-color] duration-500 ease-in-out hover:bg-black text-black hover:text-[#f3fe00] "

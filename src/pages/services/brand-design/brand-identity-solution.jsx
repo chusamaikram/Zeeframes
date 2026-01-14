@@ -41,19 +41,19 @@ export default function BrandIdentity() {
         },
     ]
     const WhyListing = [
-        { title: "We Craft Visual Identities That Tell Compelling Stories", desc: "Our designs merge creativity and clarity, helping your brand express emotion and purpose through every visual touchpoint meaningfully." },
-        { title: "We Translate Your Brand Essence Into Lasting Impressions" },
-        { title: "We Design Systems That Scale Across Every Platform" }
+        { title: "Strategic Foundation", desc: "We design brand identities grounded in clear strategy, ensuring every visual decision supports your brand’s purpose, positioning, and long-term goals." },
+        { title: "Consistent Systems" },
+        { title: "Scalable Design" }
     ]
     return (
         <>
             <ServicePage
                 main_heading="Brand Identity Design"
                 hero_desc="We design brand identities that inspire recognition and trust. Your brand’s visual DNA, shaped for consistency, clarity, and timeless appeal."
-                sec_heading=" Creating a Visual Identity That Defines You"
+                sec_heading=" Identity That Defines Your Brand"
                 sec_desc="Our Brand Identity Design service builds the visual and emotional foundation of your brand. We craft logos, typography, and color systems that capture who you are and how you want to be remembered."
-                processHeading="A Strategic Process That Builds Strong Foundations"
-                whyHeading="Why Are Our Brand Identity Design Services the Right Choice for You?"
+                processHeading="Our Brand Identity Design Process"
+                whyHeading="Why Choose Our Brand Identity Design Services?"
                 StrategyListing={StrategyListing}
                 processCards={ProcessCards}
                 WhyListing={WhyListing}

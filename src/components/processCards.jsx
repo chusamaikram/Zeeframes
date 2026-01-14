@@ -2,9 +2,8 @@ import { motion } from "framer-motion"
 export default function ProcessCard(props) {
     return (
         <>
-            <div className="flex flex-col items-start">
-                <h3 className=" flex items-center gap-2 font-[Geologica]" >
-                    <span className="text-base font-medium text-white ">{props.id}</span>
+            <div className="relative flex flex-col items-start">
+                <h3 className=" font-[Geologica] text-xl md:text-4xl font-semibold md:font-semibold leading-[normal] " >
                     <motion.span
                         initial={{ opacity: 0.5 }}
                         whileInView={{
@@ -12,9 +11,9 @@ export default function ProcessCard(props) {
                         }}
                         transition={{
                             duration: 1.5
-                        }}
-                        className="text-[19px] font-semibold "
-                    >{props.heading} </motion.span>
+                        }}>
+                        {props.heading}
+                    </motion.span>
                 </h3>
                 <span className="text-lg text-white/60 font-bold font-['Inter'] " >{props.category}</span>
                 <motion.p
@@ -23,9 +22,22 @@ export default function ProcessCard(props) {
                         opacity: 1
                     }}
                     transition={{
-                        duration: 1.5
+                        duration:2
                     }}
-                    className="max-w-[553px] mt-2.5 text-base leading-[24px] text-white font-['Inter'] text-start ">{props.desc}</motion.p>
+                    className="max-w-[553px] mt-2.5 text-base leading-[24px] text-white font-['Inter'] text-start ">{props.desc}
+                </motion.p>
+                <motion.span
+                    className="absolute top-0 -left-12 text-base font-medium"
+                    initial={{ opacity: 0 }}
+                    whileInView={{
+                        opacity: 1
+                    }}
+                    transition={{
+                        duration: 2
+                    }}
+                >
+                    {props.id}
+                </motion.span>
             </div>
 
         </>

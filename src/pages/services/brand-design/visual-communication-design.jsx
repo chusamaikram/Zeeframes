@@ -41,9 +41,9 @@ export default function VisualCommunication() {
         },
     ]
     const WhyListing = [
-        { title: "We Create Visual Assets That Speak With Purpose and Clarity", desc: "Each asset is strategically designed to reinforce your brand’s message and improve audience understanding across multiple touchpoints consistently." },
-        { title: "We Build Cohesion Across Campaigns, Platforms, and AudiencesWe Translate Your Brand Essence Into Lasting Impressions" },
-        { title: "We Enhance Engagement Through Thoughtful, On-Brand Design Choices" }
+        { title: "We Translate Complex Ideas Into Clear Visuals", desc: "We simplify information through visuals that are easy to understand and act on." },
+        { title: "We Design Consistent Visual Messaging" },
+        { title: "We Improve Engagement Through Design Clarity" }
     ]
     return (
         <>
@@ -53,7 +53,7 @@ export default function VisualCommunication() {
                 sec_heading="Building Cohesive Visual Brand Communication"
                 sec_desc="Our Visual Communication Design service ensures that every marketing material, social post, and campaign asset aligns with your brand identity. We help you communicate visually with clarity, consistency, and creativity."
                 processHeading="A Strategic Process That Builds Strong Foundations"
-                whyHeading="Why Are Our Visual Communication Design Services the Right Choice for You?"
+                whyHeading="Hire Visual Communication Designers for Long-Term Impact"
                 StrategyListing={StrategyListing}
                 processCards={ProcessCards}
                 WhyListing={WhyListing}

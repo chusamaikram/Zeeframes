@@ -41,9 +41,9 @@ export default function Prototyping() {
         },
     ]
     const WhyListing = [
-        { title: "We Reduce Risk Before You Invest in Development", desc: "By validating early, we help prevent wasted costs, time, and effort on features that fail to meet user expectations." },
-        { title: "We Deliver Feedback That Drives Measurable Improvement" },
-        { title: "We Validate Every Concept With Authentic Real-World Users" }
+        { title: "We Validate Ideas With Real Users", desc: "We test assumptions early using interactive prototypes and real user feedback." },
+        { title: "We Identify Usability Issues Before Development" },
+        { title: "We Support Confident Product Decisions" }
     ]
     return (
         <>
@@ -55,7 +55,7 @@ export default function Prototyping() {
                 StrategyListing={StrategyListing}
                 processHeading="A Strategic Process That Builds Strong Foundations"
                 processCards={ProcessCards}
-                whyHeading="Why Are Our Prototyping & User Testing Services the Right Choice for You?"
+                whyHeading="Hire Prototyping Experts to Validate Product Experiences"
                 WhyListing={WhyListing}
 
             />

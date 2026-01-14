@@ -6,13 +6,13 @@ import {
 } from "../../../assets/svg/service-dropdown-icons"
 import CommonCard from "./service-card-style"
 
-export default function ProductDesign() {
+export default function UiUxDesign() {
     const DesignCards = [
         {
             id: 1,
-            heading: "Product Strategy Consulting",
+            heading: "UI UX Consulting",
             desc: "Shape your product vision with insights, market analysis, and growth strategies.",
-            path: "/services/product-strategy-consulting",
+            path: "/services/ui-ux-consulting",
             icon: <ConsultingIcon />
         },
         {
@@ -24,9 +24,9 @@ export default function ProductDesign() {
         },
         {
             id: 3,
-            heading: "Product Strategy & Roadmapping",
+            heading: "UX Audit & Product Optimization",
             desc: "Align goals and deliverables into a strategic roadmap for market success.",
-            path: "/services/product-strategy-roadmapping",
+            path: "/services/ux-audit-product-optimization",
             icon: <RoadmapingIcon />
         },
         {
@@ -38,39 +38,33 @@ export default function ProductDesign() {
         },
         {
             id: 5,
-            heading: "UI/UX Design",
-            desc: "Shape your product vision with insights, market analysis, and growth strategies.",
-            path: "/services/ui-ux-design",
-            icon: <UiUxIcon />
-        },
-        {
-            id: 6,
             heading: "Design Systems & Guidelines",
             desc: "Develop scalable ecosystems that ensure brand consistency across platforms.",
             path: "/services/design-system-guidelines",
             icon: <GuidelinesIcon />
         },
         {
-            id: 7,
+            id: 6,
             heading: "Prototyping & User Testing",
             desc: "Turn ideas into prototypes, validate with users, and refine before launch.",
             path: "/services/prototyping-user-testing",
             icon: <PrototypingIcon />
         },
         {
-            id: 8,
-            heading: "Interaction & Motion Design",
-            desc: "Enrich experiences with animations that bring interfaces to life.",
-            path: "/services/interaction-motion-design",
-            icon: <InteractionIcon />
+            id: 7,
+            heading: "Web Design",
+            desc: "Deliver striking, functional interfaces that enhance user satisfaction.",
+            path: "/services/web-design",
+            icon: <UiUxIcon />
         },
         {
-            id: 9,
-            heading: "UX Audit & Product Optimization",
-            desc: "Identify usability challenges and unlock opportunities through evaluations.",
-            path: "/services/ux-audit-product-optimization",
-            icon: <OptimizationIcon />
+            id: 8,
+            heading: "Mobile Design",
+            desc: "Enrich experiences with animations that bring interfaces to life.",
+            path: "/services/mobile-design",
+            icon: <InteractionIcon />
         },
+        
     ]
     return (
         <>

@@ -28,7 +28,7 @@ export default function Rebranding() {
         {
             id: 3,
             title: "Redesign",
-            desc: "Create refreshed visuals and systems that reflect modern relevance beautifully..",
+            desc: "Create refreshed visuals and systems that reflect modern relevance beautifully.",
             img: <Integrate />,
             digit_width: 40,
         },
@@ -41,9 +41,9 @@ export default function Rebranding() {
         },
     ]
     const WhyListing = [
-        { title: "We Refresh Without Losing Your Core Brand Heritage", desc: "We evolve your visual and verbal identity carefully, keeping the essence intact while ensuring modern relevance and emotional continuity." },
-        { title: "We Deliver Rebranding Strategies Built for Longevity and Growth" },
-        { title: "We Guarantee a Seamless, Impactful Transition Across Channels" }
+        { title: "We Identify Gaps in Brand Perception", desc: "We uncover misalignment between brand intent and audience perception." },
+        { title: "We Redesign Brand Systems for Today’s Market" },
+        { title: "We Maintain Consistency During Brand Change" }
     ]
     return (
         <>
@@ -53,7 +53,7 @@ export default function Rebranding() {
                 sec_heading=" Revitalizing Brands for the Next Chapter"
                 sec_desc="Our Rebranding & Evolution service helps you modernize your visual identity, tone, and positioning without losing your core essence. We ensure your brand remains relevant, engaging, and forward-looking."
                 processHeading="A Strategic Process That Builds Strong Foundations"
-                whyHeading="Why Are Our Rebranding & Evolution Services the Right Choice for You?"
+                whyHeading="Hire Rebranding Experts to Lead Brand Transformation"
                 StrategyListing={StrategyListing}
                 processCards={ProcessCards}
                 WhyListing={WhyListing}

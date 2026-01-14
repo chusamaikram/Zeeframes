@@ -41,9 +41,9 @@ export default function BrandStrategy() {
         },
     ]
     const WhyListing = [
-        { title: "We Turn Market Insights Into Clear Brand Direction", desc: "Our research-driven strategies translate data into distinct positioning that strengthens brand equity and audience engagement effectively." },
-        { title: "We Build Messaging Systems That Drive Emotional Connection" },
-        { title: "We Align Brand Voice Across Every Touchpoint Seamlessly" }
+        { title: "We Define Clear Brand Strategy", desc: "We clarify your brand’s purpose, vision, and goals to create a strong strategic foundation." },
+        { title: "We Establish Strategic Brand Direction" },
+        { title: "We Align Brand Vision and Purpose" }
     ]
     return (
         <>

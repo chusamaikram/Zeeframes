@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { DevelopmentIcon, BrandingIcon, DesignIcon, } from "../../assets/svg/service-dropdown-icons";
-import ProductDesign from "../../components/services/service-tabs/product-design";
+import ProductDesign from "../../components/services/service-tabs/ui-ux-design";
 import BrandingSolutions from "../../components/services/service-tabs/branding-solution";
 import NoCodeDevelopment from "../../components/services/service-tabs/no-code";
 
@@ -14,28 +14,27 @@ export default function Services() {
     const Sidebar = [
         {
             id: 1,
-            title: "Product Design",
+            title: "UI UX Design",
             icon: <DesignIcon />,
             keywords: [
-                "/services/product-strategy-consulting",
+                "/services/ux-ui-consulting",
                 "/services/ux-research-insights",
-                "/services/product-strategy-roadmapping",
                 "/services/experience-architecture",
-                "/services/ui-ux-design",
                 "/services/design-system-guidelines",
                 "/services/prototyping-user-testing",
-                "/services/interaction-motion-design",
                 "/services/ux-audit-product-optimization",
+                "/services/web-design",
+                "/services/mobile-design",
             ],
         },
         {
             id: 2,
-            title: "Branding Solutions",
+            title: "Brand Design",
             icon: <BrandingIcon />,
             keywords: [
-                "/services/brand-identity-solution",
+                "/services/brand-identity-design",
                 "/services/brand-strategy-positioning",
-                "/services/creative-direction",
+                "/services/motion-design",
                 "/services/visual-communication-design",
                 "/services/rebranding-evolution",
             ],
@@ -83,10 +82,10 @@ export default function Services() {
                                 onClick={() => setActiveTab(item.id)}
                                 className={`w-full p-4 rounded-[8px] flex items-center gap-3 transition-all
                                              ${activeTab === item.id
-                                             ? "bg-[#F3FE0014] text-white"
-                                             : "text-white hover:bg-[#F3FE0014]"
-                                          }`}
-                                        aria-label="service tab"
+                                        ? "bg-[#F3FE0014] text-white"
+                                        : "text-white hover:bg-[#F3FE0014]"
+                                    }`}
+                                aria-label="service tab"
                             >
                                 <span>{item.icon}</span>
                                 <p className="text-base leading-[24px] font-semibold font-[Inter]">

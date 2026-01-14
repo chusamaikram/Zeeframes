@@ -8,7 +8,7 @@ import FaqSection from "./faq-section";
 import HeroSection from "./hero";
 import InsightsSection from "./insights";
 import ProcessSection from "./process";
-import ServicesSection from "./services";
+import ServicesSection from "./services/services";
 import Showcase from "./showcase";
 import VideoSection from "./video-section";
 export default function Home() {

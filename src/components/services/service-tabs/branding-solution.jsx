@@ -1,6 +1,6 @@
 
 
-import { RoadmapingIcon, ResearchIcon, ConsultingIcon, UiUxIcon, ArchitectureIcon } from "../../../assets/svg/service-dropdown-icons"
+import { RoadmapingIcon, ResearchIcon, ConsultingIcon, UiUxIcon, ArchitectureIcon, MotionDesignIcon } from "../../../assets/svg/service-dropdown-icons"
 import CommonCard from "./service-card-style"
 export default function BrandingSolutions() {
 
@@ -9,7 +9,7 @@ export default function BrandingSolutions() {
             id: 1,
             title: "Brand Identity Design",
             desc: "Craft brand visuals — logo, typography, and color ,reflecting your purpose.",
-            path: "/services/brand-identity-solution",
+            path: "/services/brand-identity-design",
             icon: <ConsultingIcon />
         },
         {
@@ -21,10 +21,10 @@ export default function BrandingSolutions() {
         },
         {
             id: 3,
-            title: "Creative Direction ",
-            desc: "Develop cohesive visual direction aligning design, story, and values.",
-            path: "/services/creative-direction",
-            icon: <RoadmapingIcon />
+            title: "Motion Design ",
+            desc: "Purposeful motion that guides attention and enhances brand communication.",
+            path: "/services/motion-design",
+            icon: <MotionDesignIcon />
         },
         {
             id: 4,

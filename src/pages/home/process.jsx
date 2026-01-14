@@ -15,7 +15,7 @@ export default function ProcessSection() {
     const containerRef = useRef(null);
     const { scrollYProgress } = useScroll({
         target: containerRef,
-        offset: ["start 300px", "end 300px"]
+        offset: ["start 500px", "end 300px"]
     });
 
     const [activeImage, setActiveImage] = useState(process1);

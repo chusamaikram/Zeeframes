@@ -11,6 +11,7 @@ import ProcessSection from "./processSection";
 import ContactUs from "../../../pages/home/contact-us";
 import WhySection from "./whySection";
 import ExternalLink from "../../common/External-link";
+import Servicesgrid from "./ServicesGrid";
 
 export default function ServicePage({
     main_heading,
@@ -21,7 +22,11 @@ export default function ServicePage({
     processHeading,
     processCards,
     WhyListing,
-    whyHeading
+    whyHeading,
+    ServiceCarddesc,
+    ServiceCardsheading,
+    ServiceCards,
+    ShowCards = false,
 
 
 }) {
@@ -55,7 +60,7 @@ export default function ServicePage({
                     </div>
                 </div>
             </section>
-            <section className="bg-[#030303]py-8 sm:py-[80px] ">
+            <section className="bg-[#030303] py-8 sm:py-[80px] ">
                 <div className="container">
                     <div className="grid grid-cols-1 md:grid-cols-[minmax(100px,502px)_minmax(100px,660px)] items-center gap-20">
                         <div className="overflow-hidden rounded-[12px]">
@@ -96,6 +101,14 @@ export default function ServicePage({
                 heading={whyHeading}
                 StrategyListing={WhyListing}
             />
+            {ShowCards &&
+                <Servicesgrid
+                    heading={ServiceCardsheading}
+                    desc={ServiceCarddesc}
+                    ServiceCards={ServiceCards}
+
+                />
+            }
             <ContactUs />
         </>
     )

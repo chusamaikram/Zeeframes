@@ -41,9 +41,9 @@ export default function DesignSystem() {
         },
     ]
     const WhyListing = [
-        { title: "We Build Systems That Empower Every Design Team", desc: "We design libraries that speed up delivery, reduce rework, and improve productivity across all creative departments consistently." },
-        { title: "We Create Foundations That Scale Seamlessly Over Time" },
-        { title: "We Ensure Unified Visual and Functional Harmony Everywhere" }
+        { title: "We Create Unified Design Languages", desc: "We define shared UI components, patterns, and principles that keep products consistent across teams and platforms." },
+        { title: "We Improve Speed and Design Efficiency" },
+        { title: "We Ensure Long-Term Consistency at Scale" }
     ]
     return (
         <>
@@ -55,7 +55,7 @@ export default function DesignSystem() {
                 StrategyListing={StrategyListing}
                 processHeading="A Strategic Process That Builds Strong Foundations"
                 processCards={ProcessCards}
-                whyHeading="Why Are Our Design System Services the Right Choice for You?"
+                whyHeading="Hire Design System Experts to Create Scalable Product Systems"
                 WhyListing={WhyListing}
 
             />

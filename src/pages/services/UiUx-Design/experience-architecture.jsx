@@ -41,9 +41,9 @@ export default function Architecture() {
         },
     ]
     const WhyListing = [
-        { title: "We Design Experiences That Feel Naturally Effortless", desc: "Every flow we create reduces confusion and supports faster, frictionless navigation, resulting in greater user satisfaction overall." },
-        { title: "We Build Architectures Based on Real User Logic" },
-        { title: "We Create Scalable Frameworks for Future Design Growth" }
+        { title: "We Design Clear Experience Structures", desc: "We define how users move through products by structuring flows, journeys, and interaction patterns." },
+        { title: "We Bring Order to Complex Experiences" },
+        { title: "We Create Consistent Experience Frameworks" }
     ]
     return (
         <>
@@ -55,7 +55,7 @@ export default function Architecture() {
                 StrategyListing={StrategyListing}
                 processHeading="A Strategic Process That Builds Strong Foundations"
                 processCards={ProcessCards}
-                whyHeading="Why Are Our Experience Architecture Services the Right Choice for You?"
+                whyHeading="Hire Experience Architecture Experts to Design Clear Journeys"
                 WhyListing={WhyListing}
 
             />

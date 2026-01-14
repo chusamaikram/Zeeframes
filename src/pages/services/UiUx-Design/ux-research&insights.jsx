@@ -50,12 +50,12 @@ export default function UxResearch() {
             <ServicePage
                 main_heading="UX Research & Insights"
                 hero_desc="Understand your users beyond assumptions. We uncover what drives real behavior through research and data."
-                sec_heading="Design Backed by Evidence"
+                sec_heading="Turning user behavior into actionable insights"
                 sec_desc="Our UX Research & Insights reveal patterns, motivations, and expectations that shape better design decisions. We provide data you can act on, not guess from."
                 StrategyListing={StrategyListing}
                 processHeading="A Strategic Process That Builds Strong Foundations"
                 processCards={ProcessCards}
-                whyHeading="Why Are Our UX Research & Insights Services the Right Choice for You?"
+                whyHeading="Hire UX Researchers to Uncover User Needs and Behaviors"
                 WhyListing={WhyListing}
 
             />

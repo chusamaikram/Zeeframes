@@ -1,4 +1,4 @@
-import Heading from '../../components/common/Sec-headings'
+import Heading from '../../../components/common/Sec-headings'
 import ServiceCard from './service-cards'
 
 
@@ -9,25 +9,37 @@ export default function ServicesSection() {
             id: 1,
             heading: "FOR DIGITAL EXPERIENCES",
             title: "UX UI Design",
-            path: "/services/ui-ux-design",
+            path: "/services/ux-ui-design",
         },
         {
             id: 2,
             heading: "For Startups & Existing Companies",
             title: "Product Revamp",
-            path: "/services/product-strategy-roadmapping",
+            path: "/services/product-revamp",
         },
         {
             id: 3,
             heading: "FOR VISUAL STORYTELLERS",
             title: "Brand Design",
-            path: "/services/brand-identity-solution",
+            path: "/services/brand-design",
         },
         {
             id: 4,
             heading: "FOR RAPID APP BUILDERS",
-            title: "Low Code Development",
-            path: "/services/webflow-development",
+            title: "No Code Development",
+            path: "/services/no-code-development",
+        },
+        {
+            id: 5,
+            heading: "FOR STARTUPS & FOUNDERS",
+            title: "MVP Design",
+            path: "/services/mvp-design",
+        },
+        {
+            id: 6,
+            heading: "Dedicated ux ui Team",
+            title: "Team Extension",
+            path: "/services/team-extension",
         },
     ]
 
@@ -40,10 +52,10 @@ export default function ServicesSection() {
                     </div>
                     <div className="card-wrapper  grid grid-cols-1 lg:grid-cols-2 gap-x-8 mt-[64px]">
                         {ServiceCards.map((item) => (
-                            <ServiceCard key={item.id} 
-                            heading={item.heading}
-                            title={item.title}
-                            path={item.path} />
+                            <ServiceCard key={item.id}
+                                heading={item.heading}
+                                title={item.title}
+                                path={item.path} />
                         ))}
 
                     </div>

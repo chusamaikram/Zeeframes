@@ -1,5 +1,5 @@
 
-import { RoadmapingIcon, ResearchIcon, ConsultingIcon, UiUxIcon, ArchitectureIcon } from "../../../assets/svg/service-dropdown-icons"
+import {  ResearchIcon, ConsultingIcon, UiUxIcon, ArchitectureIcon, RoadmapingIcon } from "../../../assets/svg/service-dropdown-icons"
 import CommonCard from "./service-card-style"
 export default function NoCodeDevelopment() {
 
@@ -20,20 +20,13 @@ export default function NoCodeDevelopment() {
         },
         {
             id: 3,
-            title: "Bubble App Development",
-            desc: "Turn complex ideas into scalable, powerful no-code web apps.",
-            icon: <RoadmapingIcon />,
-            path: "/services/bubble-app-development"
-        },
-        {
-            id: 4,
             title: "Figma Sites",
             desc: "Bring Figma designs to life with unmatched pixel-perfect accuracy.",
-            icon: <UiUxIcon />,
+            icon: <RoadmapingIcon/>,
             path: "/services/figma-sites"
         },
         {
-            id: 5,
+            id: 4,
             title: "Platform Maintenance & Support",
             desc: "Keep platforms stable with regular updates and performance care.",
             icon: <ArchitectureIcon />,

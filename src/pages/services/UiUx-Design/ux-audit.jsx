@@ -41,21 +41,21 @@ export default function UxAudit() {
         },
     ]
     const WhyListing = [
-        { title: "We Identify What’s Holding Your Product Back", desc: "We uncover design gaps, usability barriers, and workflow issues that silently reduce engagement and conversion success consistently." },
-        { title: "We Provide Clear, Practical, and Actionable SolutionsWe Translate User Behavior Into Actionable Insight" },
-        { title: "We Turn Audit Insights Into Measurable Growth Outcomes" }
+        { title: "We Identify Usability and Experience Issues", desc: "We audit user flows, interactions, and interfaces to uncover friction points and gaps." },
+        { title: "We Prioritize Improvements Based on Impact" },
+        { title: "We Optimize Experiences for Better Adoption" }
     ]
     return (
         <>
             <ServicePage
                 main_heading="UX Audit & Product Optimization"
                 hero_desc="Refine what exists, redefine how it performs. We optimize products for usability, efficiency, and conversion."
-                sec_heading="Continuous Evolution for Lasting Growth"
+                sec_heading="Identify usability issues and optimize product"
                 sec_desc="Our UX Audit identifies design weaknesses, user friction, and missed opportunities, helping you deliver consistent product excellence."
                 StrategyListing={StrategyListing}
                 processHeading="A Strategic Process That Builds Strong Foundations"
                 processCards={ProcessCards}
-                whyHeading="Why Are Our UX Audit Services the Right Choice for You?"
+                whyHeading="Hire UX Audit Experts for Long-Term Product Success"
                 WhyListing={WhyListing}
 
             />
