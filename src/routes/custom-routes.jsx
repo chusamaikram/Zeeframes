@@ -62,7 +62,7 @@ export default function CustomRoutes() {
                         <Route path="/" element={<Home />} />
                         <Route path="/about" element={<AboutUs />} />
                         <Route path="/insights" element={< Insights />} />
-                        <Route path="/insights/insight-details" element={<InsightDetail />} />
+                        <Route path="/insights/:slug" element={<InsightDetail />} />
                         <Route path="/work" element={<Work />} />
                         {/* Ui Ux Design Pages  */}
                         <Route path="/services/ui-ux-consulting" element={<UiUxConsulting />} />

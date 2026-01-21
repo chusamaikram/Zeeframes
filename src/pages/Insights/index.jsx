@@ -7,12 +7,35 @@ import RecentArticles from "./recent-articles";
 import ContactUs from "../home/contact-us";
 import TrendingArticle from "./trending-article";
 import useTitle from "../../components/common/page-title";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 
 
 export default function Insights() {
 
     useTitle("Insights | Zeeframes");
+
+
+    const [recentArticles, setRecentArticles] = useState([]);
+    const [trendingArticles, setTrendingArticles] = useState([]);
+
+    useEffect(() => {
+        if (recentArticles.length === 0) {
+            fetch("/data/insights.json")
+                .then(res => {
+                    return res.json();
+                })
+                .then(data => {
+                    setRecentArticles(data.data.slice(0, 9));
+                    setTrendingArticles(data.data.slice(9));
+                })
+                .catch(err => {
+                    console.log(err);
+                });
+        }
+
+    }, []);
     return (
         <>
             <section className="bg-[#030303] py-12 sm:py-[80px] ">
@@ -48,27 +71,30 @@ export default function Insights() {
                     <img src={Elipse} alt="ellipse" width={1440} height={180} loading="lazy" />
                 </div>
                 <div className="container">
-                    <div className="relative z-2 grid grid-cols-1 md:grid-cols-[588px_1fr] items-center gap-x-12 gap-y-8 " >
+                    {trendingArticles.length > 2 && (
+                        <Link to={trendingArticles[1].slug}>
+                            <div className="relative z-2 grid grid-cols-1 md:grid-cols-[588px_1fr] items-center gap-x-12 gap-y-8 " >
 
-                        <img className="object-cover w-full h-full rounded-[12px]" src={InsightsImg} alt="Insight Thumbnail" width={588} height={406} loading="lazy" />
+                                <img className="object-cover w-full h-full rounded-[12px]" src={trendingArticles[1].thumbnail} alt="Insight Thumbnail" width={588} height={406} loading="lazy" />
 
-                        <div className="flex flex-col items-start gap-3">
-                            <h2 className="text-[28px] sm:text-[48px] font-[Geologica] leading-[normal] font-semibold w-full">How Thinking Like a Product Designer Changed My Design Handoffs</h2>
-                            <p className="text-sm sm:text-base leading-[21px] sm:leading-[30px] text_gray_495 font-[Inter]">Five lessons I’ve learned about deliverables that Junior Designer Me could’ve never imagined.</p>
-                            <div className="mt-3 flex items-center text_gray_495 text-sm leading-[normal] gap-2">
-                                <span >7 min read</span>
-                                <span className="w-[6px] h-[6px] bg-white rounded-full"></span>
-                                <time dateTime="Jan 23, 2025">Jan 23, 2025</time>
+                                <div className="flex flex-col items-start gap-3">
+                                    <h2 className="text-[28px] sm:text-[48px] font-[Geologica] leading-[normal] font-semibold w-full">{trendingArticles[1].title}</h2>
+                                    <p className="text-sm sm:text-base leading-[21px] sm:leading-[30px] text_gray_495 font-[Inter]">{trendingArticles[1].detail}</p>
+                                    <div className="mt-3 flex items-center text_gray_495 text-sm leading-[normal] gap-2">
+                                        <span >{trendingArticles[1].readTime}</span>
+                                        <span className="w-[6px] h-[6px] bg-white rounded-full"></span>
+                                        <time dateTime="Jan 23, 2025">{trendingArticles[1].data}</time>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                        </Link>
+                    )}
 
                 </div>
             </section>
-
-            < RecentArticles />
-             < TrendingArticle />
-             < ContactUs />
+            < RecentArticles LatestInsight={recentArticles} />
+            < TrendingArticle TrendingInsight={trendingArticles} />
+            < ContactUs />
         </>
     )
 }

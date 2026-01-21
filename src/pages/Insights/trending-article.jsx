@@ -5,55 +5,8 @@ import { Link } from "react-router-dom";
 
 
 
-export default function TrendingArticle() {
-    const TrendingInsight = [
-        {
-            id: 1,
-            img: TrendingImg,
-            title: "20+ GenAI UX patterns, examples and implementation tactics",
-            desc: "A shared language for product teams to build usable, intelligent and safe GenAI experiences...",
-            path: "#",
-            readtime: "7",
-            date: "Jan 23, 2025",
-        },
-        {
-            id: 2,
-            img: TrendingImg,
-            title: "20+ GenAI UX patterns, examples and implementation tactics",
-            desc: "A shared language for product teams to build usable, intelligent and safe GenAI experiences...",
-            path: "#",
-            readtime: "7",
-            date: "Jan 23, 2025",
-        },
-        {
-            id: 3,
-            img: TrendingImg,
-            title: "20+ GenAI UX patterns, examples and implementation tactics",
-            desc: "A shared language for product teams to build usable, intelligent and safe GenAI experiences...",
-            path: "#",
-            readtime: "7",
-            date: "Jan 23, 2025",
-        },
-        {
-            id: 4,
-            img: TrendingImg,
-            title: "20+ GenAI UX patterns, examples and implementation tactics",
-            desc: "A shared language for product teams to build usable, intelligent and safe GenAI experiences...",
-            path: "#",
-            readtime: "7",
-            date: "Jan 23, 2025",
-        },
-        {
-            id: 5,
-            img: TrendingImg,
-            title: "20+ GenAI UX patterns, examples and implementation tactics",
-            desc: "A shared language for product teams to build usable, intelligent and safe GenAI experiences...",
-            path: "#",
-            readtime: "7",
-            date: "Jan 23, 2025",
-        },
-
-    ]
+export default function TrendingArticle({TrendingInsight}) {
+   
 
     const BlogCategory = [
         { title: "Design", path: "#" },
@@ -100,16 +53,16 @@ export default function TrendingArticle() {
                         </div>
                         <div className="grid gap-12 ">
                             {TrendingInsight.map(card => (
-                                <Link key={card.id} to={card.path} aria-label="navigation to detail page" className="border-2 border-transparent hover:border-[#F3FE00] rounded-xl transition-colors duration-300 group">
+                                <Link key={card.id} to={card.slug} aria-label="navigation to detail page" className="border-2 border-transparent hover:border-[#F3FE00] rounded-xl transition-colors duration-300 group">
                                     <div className={`grid grid-cols-1 sm:grid-cols-2  items-center rounded-[12px] sm:h-[218px] sm:h-auto border border-white/20 backdrop-blur `}>
-                                        <div className="overflow-hidden rounded-[12px_12px_0_0] sm:rounded-[12px_0_0_12px]">
-                                            <img className="w-full h-full object-cover group-hover:scale-105 transition-all duration-300" src={card.img} alt="thumbnail" width={295} height={218} loading="lazy" />
+                                        <div className="overflow-hidden rounded-[12px_12px_0_0] sm:rounded-[12px_0_0_12px] w-full h-full">
+                                            <img className="w-full h-full object-cover group-hover:scale-105 transition-all duration-300" src={card.thumbnail} alt={card.slug} width={295} height={218} loading="lazy" />
                                         </div>
                                         <div className="h-full  p-4 sm:p-[16px_16px_16px_28px]  bg-white/8  rounded-[0_0_12px_12px] sm:rounded-[0_12px_12px_0] flex flex-col items-start gap-3">
                                             <h3 className="text-[19px] font-[Geologica] font-semibold leading-[normal] group-hover:text-[#F3FE00] transition-colors duration-300 ">{card.title}</h3>
-                                            <p className="text-[14px] font-[Inter] leading-[21px] text_gray_495 line-clamp-2 ">{card.desc}</p>
+                                            <p className="text-[14px] font-[Inter] leading-[21px] text_gray_495 line-clamp-2 ">{card.detail}</p>
                                             <div className="flex items-center gap-2 font-[Inter] text_gray_495 text-[12px] mt-3">
-                                                <span >{card.readtime} min read</span>
+                                                <span >{card.readTime} min read</span>
                                                 <div className="w-[6px] h-[6px] bg-white rounded-full"></div>
                                                 <time datetime={card.date}>{card.date}</time>
                                             </div>

@@ -15,9 +15,9 @@ const RecentBlog = ({ title, desc, path, className, img, readtime, date }) => {
     return (
         <>
             <Link to={path} aria-label="navigation to detail page" >
-                <div className={`flex flex-col items-center max-w-[381] group backdrop-blur border border-white/20 rounded-2xl bg-white/8 ${className}`}>
-                    <div className="overflow-hidden rounded-[16px_16px_0_0] ">
-                        <img className=" w-full object-cover group-hover:scale-105 transition-all duration-300" src={img} alt="thumbnail" width={382} height={246} loading="lazy" />
+                <div className={` flex flex-col items-center max-w-[381] group backdrop-blur border border-white/20 rounded-2xl bg-white/8 ${className}`}>
+                    <div className="overflow-hidden rounded-[16px_16px_0_0] w-full ">
+                        <img className=" w-full h-full object-cover group-hover:scale-105 transition-all duration-300" src={img} alt="thumbnail" width={382} height={246} loading="lazy" />
                     </div>
                     <div className="p-6 w-full  ">
                         <div className="  flex flex-col items-start gap-3">
@@ -36,50 +36,12 @@ const RecentBlog = ({ title, desc, path, className, img, readtime, date }) => {
     )
 }
 
-export default function RecentArticles() {
+export default function RecentArticles({ LatestInsight = [] }) {
     const swiperRef = useRef(null);
     const [isBeginning, setIsBeginning] = useState(true);
     const [isEnd, setIsEnd] = useState(false);
 
-    const LatestInsight = [
-        {
-            id: 1,
-            img: RecentArticle,
-            title: "20+ GenAI UX patterns, examples and implementation tactics",
-            desc: "A shared language for product teams to build usable, intelligent and safe GenAI",
-            path: "/insights/insight-details",
-            readtime: "7",
-            date: "Jan 23, 2025",
-        },
-        {
-            id: 2,
-            img: RecentArticle,
-            title: "20+ GenAI UX patterns, examples and implementation tactics",
-            desc: "A shared language for product teams to build usable, intelligent and safe GenAI",
-            path: "/insights/insight-details",
-            readtime: "7",
-            date: "Jan 23, 2025",
-        },
-        {
-            id: 3,
-            img: RecentArticle,
-            title: "20+ GenAI UX patterns, examples and implementation tactics",
-            desc: "A shared language for product teams to build usable, intelligent and safe GenAI",
-            path: "/insights/insight-details",
-            readtime: "7",
-            date: "Jan 23, 2025",
-        },
-        {
-            id: 4,
-            img: RecentArticle,
-            title: "20+ GenAI UX patterns, examples and implementation tactics",
-            desc: "A shared language for product teams to build usable, intelligent and safe GenAI",
-            path: "/insights/insight-details",
-            readtime: "7",
-            date: "Jan 23, 2025",
-        },
 
-    ]
 
 
 
@@ -136,10 +98,10 @@ export default function RecentArticles() {
                                 <SwiperSlide key={item.id} className="rounded-2xl border-2 border-transparent hover:border-[#F3FE00] h-auto transition-colors duration-300 ">
                                     <RecentBlog
                                         title={item.title}
-                                        desc={item.desc}
-                                        path={item.path}
-                                        img={item.img}
-                                        readtime={item.readtime}
+                                        desc={item.detail}
+                                        path={`/insights/${item.slug}`}
+                                        img={item.thumbnail}
+                                        readtime={item.readTime}
                                         date={item.date}
                                     />
                                 </SwiperSlide>
