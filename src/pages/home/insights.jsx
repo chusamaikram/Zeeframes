@@ -43,10 +43,7 @@ export default function InsightsSection() {
                             <h2 className="text-[28px] sm:text-[40px] text-center sm:text-start font-bold leading-[40px] sm:leading-[44px] font-[Geologica]">Insights That Inspire Vision Forward</h2>
                         </div>
                         <div>
-                            {/* <Link to="/insights" className="h-[48px] flex items-center justify-between p-5 rounded-full bg-white text-black text-base font-semibold leading-[24px] font-[Inter]" aria-label="insight link" >
-                                Explore More
-                                <ArrowIcon />
-                            </Link> */}
+                           
                             <Button
                                 defaulttext="Explore More"
                                 hovertext="See more "

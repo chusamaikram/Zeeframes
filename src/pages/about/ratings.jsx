@@ -1,4 +1,4 @@
-import { div } from "framer-motion/client";
+
 import { RatingStar, GoodFirmsLogo, UpworkLogo, RatingClutch, } from "../../assets/svg";
 
 

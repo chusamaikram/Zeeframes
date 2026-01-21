@@ -6,7 +6,7 @@ export default function CommonCard({ path, icon, heading, desc }) {
     const pathname = location.pathname
     return (
         <>
-            <Link onClick={() => setIsMenuOpen(false)} to={path} className={`max-w-[456px] p-5 font-[Inter] rounded-[6px] flex items-start gap-3 transition-transform duration-500 hover:-translate-y-1 hover:bg-[#F3FE0014] ${pathname === path ||
+            <Link  to={path} className={`max-w-[456px] p-5 font-[Inter] rounded-[6px] flex items-start gap-3 transition-transform duration-500 hover:-translate-y-1 hover:bg-[#F3FE0014] ${pathname === path ||
                 (pathname.includes(path) && path !== "/")
                 ? "bg-[#F3FE0014]"
                 : ""
