@@ -11,7 +11,7 @@ export default function Button({
   onclick,
 }) {
   return (
-    <button>
+    <button aria-label="cta-button">
       <Link
         to={path}
         onClick={onclick}
