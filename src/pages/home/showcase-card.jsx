@@ -67,7 +67,7 @@ export default function ShowcaseCard() {
                             <Link to={item.path} className="flex items-center justify-between w-full">
                                 <div>
                                     <span className="mb-2 text-sm font-normal ">{item.heading}</span>
-                                    <h3 className="text-[28px] leading-[normal] font-semibold text-white font-[Geologica] ">{item.title}</h3>
+                                    <h2 className="text-[28px] leading-[normal] font-semibold text-white font-[Geologica] ">{item.title}</h2>
                                 </div>
                                 <div className="w-6 h-6 rounded-full border border-[#B8B8B8] shrink-0 flex items-center justify-center">
                                     <ArrowIconMini />

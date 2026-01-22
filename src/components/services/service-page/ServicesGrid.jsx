@@ -13,7 +13,7 @@ export default function Servicesgrid({ heading, desc, ServiceCards = [], }) {
                         <Link key={index} to={card.path}>
                             <div className="p-4 rounded-2xl border border-[#373737] bg-[#0B0B0B] flex flex-col items-center gap-6">
                                 <div className="overflow-hidden rounded-lg w-full">
-                                    <img className="object-cover w-full h-auto" src={Servicethumbnail} width={366} height={210} loading="lazy" />
+                                    <img className="object-cover w-full h-auto" src={Servicethumbnail} width={366} height={210} loading="lazy" alt={card.title} />
                                 </div>
                                 <div className="flex flex-col items-start gap-2">
                                     <h3 className="text-xl/7.5 font-['Geologica'] text-white">{card.title}</h3>

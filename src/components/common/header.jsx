@@ -69,7 +69,7 @@ export default function Header() {
                       onMouseLeave={() => setShowServicesPanel(false)}
                     >
                       <Link
-                        onClick={toggleMobileView }
+                        onClick={toggleMobileView}
                         to={link.path}
                         className={`relative text-lg font-normal flex items-center justify-center gap-2 px-4 py-2 font-[Inter] text-[18px] leading-[27px] ${isServicesActive ? "text-[#F3FE00]" : "text-white"}`}
                       >
@@ -104,14 +104,15 @@ export default function Header() {
                   )}
                 </li>
               ))}
-
-              <Button
-                onclick="() => setIsMenuOpen(false)"
-                path="/contact"
-                hovertext={" Let's talk"}
-                defaulttext={"Work with us"}
-                className="flex sm:hidden w-[190px]  text-black border border-[#f3fe00] bg-[#f3fe00] hover:bg-black  hover:text-[#f3fe00]"
-              />
+              <li>
+                <Button
+                  onclick="() => setIsMenuOpen(false)"
+                  path="/contact"
+                  hovertext={" Let's talk"}
+                  defaulttext={"Work with us"}
+                  className="flex sm:hidden w-[190px]  text-black border border-[#f3fe00] bg-[#f3fe00] hover:bg-black  hover:text-[#f3fe00]"
+                />
+              </li>
             </ul>
 
             <div className="flex items-center gap-3">
