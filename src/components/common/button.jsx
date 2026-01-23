@@ -11,29 +11,28 @@ export default function Button({
   onclick,
 }) {
   return (
-    <button aria-label="cta-button">
-      <Link
-        to={path}
-        onClick={onclick}
-        className={` group relative inline-flex flex-nowrap items-center justify-center px-6 py-3 border rounded-full text-base leading-6 font-semibold transition-all duration-300 ease-in-out ${className}`}
+
+    <Link
+      to={path}
+      onClick={onclick}
+      className={` group relative inline-flex flex-nowrap items-center justify-center px-6 py-3 border rounded-full text-base leading-6 font-semibold transition-all duration-300 ease-in-out ${className}`}
+    >
+      {/* Default text */}
+      <span
+        className={`flex flex-nowrap items-start gap-3 transition-all duration-300 ease-in-out ${!disableHover ? "group-hover:opacity-0 group-hover:-translate-y-1" : ""
+          }`}
       >
-        {/* Default text */}
-        <span
-          className={`flex flex-nowrap items-start gap-3 transition-all duration-300 ease-in-out ${!disableHover ? "group-hover:opacity-0 group-hover:-translate-y-1" : ""
-            }`}
-        >
-          {defaulttext}
-          {showicon && <ArrowIcon />}
+        {defaulttext}
+        {showicon && <ArrowIcon />}
+      </span>
+
+      {/* Hover text */}
+      {!disableHover && (
+        <span className="absolute transition-all duration-300 ease-in-out opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0">
+          {hovertext}
         </span>
+      )}
 
-        {/* Hover text */}
-        {!disableHover && (
-          <span className="absolute transition-all duration-300 ease-in-out opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0">
-            {hovertext}
-          </span>
-        )}
-
-      </Link>
-    </button>
+    </Link>
   );
 }
