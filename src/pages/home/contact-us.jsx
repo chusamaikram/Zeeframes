@@ -27,25 +27,33 @@ export default function ContactUs({ border_color = "border-[#F3FE00]", radius = 
             id: 1,
             logo: Behemoths,
             path: "https://techbehemoths.com/company/zeeframes",
-            name: "techbehemoths"
+            name: "techbehemoths",
+            width: "109",
+            height: "36"
         },
         {
             id: 2,
             logo: TrustPilot,
             path: "https://www.trustpilot.com/review/zeeframes.com",
-            name: "trustpilot"
+            name: "trustpilot",
+            width: "156",
+            height: "36"
         },
         {
             id: 3,
             logo: UxUi,
             path: "https://selectedfirms.co/agency/zeeframes",
-            name: "selectedfirms"
+            name: "selectedfirms",
+            width: "50",
+            height: "36"
         },
         {
             id: 4,
             logo: Award,
             path: "https://techbehemoths.com/awards-2024/ux-ui-design/pakistan#view=64495",
-            name: "techbehemoths"
+            name: "techbehemoths",
+            width: "43",
+            height: "36"
         },
     ]
 
@@ -106,7 +114,7 @@ export default function ContactUs({ border_color = "border-[#F3FE00]", radius = 
                                 {Reviews.map(item => (
                                     <li key={item.id}>
                                         <a href={item.path} target="blank" aria-label={item.name}>
-                                            <img src={item.logo} alt={item.name} />
+                                            <img src={item.logo} alt={item.name} width={item.width} height={item.height} />
                                         </a>
 
                                     </li>

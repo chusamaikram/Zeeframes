@@ -35,19 +35,23 @@
 
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-  <link rel="preconnect" href="https://zeeframes-v03.vercel.app/">
+  <!-- DNS Prefetch & Preconnect for Google Fonts (MUST come before preload) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="/data/insights.json" as="fetch" crossorigin>
+
+  <!-- Load Google Fonts CSS with display=swap -->
   <link
     href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
-
 
 </head>
 
 <body>
   <div id="root"></div>
-  <script type="module" src="/src/main.jsx" defer></script>
+  <script type="module" src="/src/main.jsx"></script>
 </body>
 
 </html>

@@ -26,7 +26,7 @@ const RecentBlog = ({ title, desc, path, className, img, readtime, date }) => {
                             <div className="flex items-center gap-2 font-[Inter] text_gray_495 text-[12px] mt-3">
                                 <span >{readtime} min read</span>
                                 <div className="w-[6px] h-[6px] bg-white rounded-full"></div>
-                                <time datetime={date}>{date}</time>
+                                <time dateTime={date}>{date}</time>
                             </div>
                         </div>
                     </div>

@@ -15,7 +15,7 @@ export default function ProcessSection() {
     const containerRef = useRef(null);
     const { scrollYProgress } = useScroll({
         target: containerRef,
-        offset: ["start 500px", "end 300px"]
+        offset: ["start 500px", "end 300px"],
     });
 
     const [activeImage, setActiveImage] = useState(process1);
@@ -50,7 +50,7 @@ export default function ProcessSection() {
             heading: "Discovery",
             category: "Research & Domain Analysis",
             desc: "Don't ignore the crucial step of Research & Development in the UX Design Process! Discover and solve user problems to launch a successful product. Gather data on the target audience and analyze customer feedback. Improve user experience",
-            img: process1
+            img: process1,
 
         },
         {
@@ -58,7 +58,8 @@ export default function ProcessSection() {
             heading: "Flows",
             category: "User Journey Map Sitemap",
             desc: "Create successful user flows for your product in the UX design process by mapping user journeys and interactions. Define product ideas and goals, tailored to user needs, behavior, and expectations. Test with real users for optimization.",
-            img: process2
+            img: process2,
+
 
         },
         {
@@ -66,7 +67,7 @@ export default function ProcessSection() {
             heading: "Wireframes",
             category: "Low - Fidelity Design",
             desc: "Define the content and functionality of your product with wireframes in the UX Design process. Brainstorm multiple ideas, get feedback, and refine for high fidelity wireframes. Enhance the user interface for a natural and intuitive look.",
-            img: process3
+            img: process3,
 
         },
         {
@@ -74,21 +75,21 @@ export default function ProcessSection() {
             heading: "Mockups",
             category: "High - Fidelity Design",
             desc: "Visualize your product's appearance with mockups in the UX Design. Detailed design for every screen gets reviewed by stakeholders and the design team. Get it tested with users for improved design based on their needs and expectations.",
-            img: process4
+            img: process4,
         },
         {
             id: "05",
             heading: "Prototyping",
             category: "Interaction Design",
             desc: "UX Designers create clickable prototypes for your product using tools like Invision to assess product functionality. Gather user feedback and collaborate with development team to create improved version of the design for implementation.",
-            img: process5
+            img: process5,
         },
         {
             id: "06",
             heading: "Testing",
             category: "Usability Testing",
             desc: "UX designers focus on improving product usability by testing with real users. Define the testing goals and scenarios and recruit a target audience. Conduct usability tests, analyze results, and make changes for optimal user experience.",
-            img: process6
+            img: process6,
         },
     ]
     return (
@@ -103,8 +104,9 @@ export default function ProcessSection() {
 develop excellently. And we care deeply about what we do."
                         />
                     </div>
-                    <div ref={containerRef} className="flex items-start gap-20 relative">
+                    <div ref={containerRef} className="flex items-start gap-20 relative ">
                         <motion.div
+                            layout={false}
                             style={{
                                 scaleY: scrollYProgress,
                                 transformOrigin: 'top',
@@ -127,8 +129,8 @@ develop excellently. And we care deeply about what we do."
                                                 category={items.category}
                                                 desc={items.desc}
                                             />
-                                            <div className="overflow-hidden block md:hidden">
-                                                <img className="object-cover w-full h-full rounded-4" src={items.img} alt="thumbnail" width={527} height={506} loading="lazy" />
+                                            <div className="overflow-hidden block md:hidden h-[188px] w-full">
+                                                <img className="object-cover w-full h-full rounded-4" src={items.img} alt="thumbnail" width={363} height={349} loading="lazy" />
                                             </div>
                                         </div>
 
@@ -137,7 +139,7 @@ develop excellently. And we care deeply about what we do."
                                 ))}
                             </ul>
                         </div>
-                        <div className="hidden md:block  sticky top-[20vh] h-['fit-content'] ">
+                        <div className="hidden md:block  sticky top-[20vh] h-fit ">
                             <img className="object-contain w-full rounded-4" src={activeImage} alt="process visuals" width={527} height={506} loading="lazy" />
 
                         </div>

@@ -80,7 +80,7 @@ export default function AboutUs() {
                         <div className='mt-8 sm:mt-16 flex flex-wrap items-center justify-center gap-4 '>
                             {HomeCards.map((Items, index) => (
                                 <div key={index} className='w-full sm:w-auto px-3 sm:px-5 py-3  bg-[#191919] border border-[#303030] rounded-[16px] flex flex-row sm:flex-col items-center gap-3 sm:gap-4'>
-                                    <p className='text-base sm:text-lg font-semibold leading-[21px] font-[Geologica] flex items-center gap-2.5'>
+                                    <div className='text-base sm:text-lg font-semibold leading-[21px] font-[Geologica] flex items-center gap-2.5'>
                                         {Items.heading}
                                         {index == 1 && (<div className='flex items-center gap-1.5'>
                                             <img src={Items.flag1} alt="flag icon" width={22} height={16} />
@@ -93,7 +93,7 @@ export default function AboutUs() {
 
                                         </div>)}
 
-                                    </p>
+                                    </div>
                                     <a href={Items.path} aria-label='ratings' >
                                         <div className='px-1.5 py-1 border border-[#3F3F3F] rounded-full flex items-center gap-1.5'>
                                             <div className='px-2 py-1 rounded-full bg-white'>{Items.icon}</div>

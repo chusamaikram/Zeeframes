@@ -52,7 +52,7 @@ if (!article) {
                                 <div className=" flex items-center justify-start gap-2 text-[#CDCDCD] text-lg font-[Inter] leading-[normal] ">
                                     <span >{article.readTime}</span>
                                     <div className="w-[6px] h-[6px] bg-[#4D4C4C] rounded-full"></div>
-                                    <time datetime="Jan 23, 2025">{article.date}</time>
+                                    <time dateTime="Jan 23, 2025">{article.date}</time>
                                 </div>
                                 <button className=" cursor-pointer font-[Inter] flex items-center justify-center gap-1.5 text-[#CDCDCD]">
                                     <img src={ShareIcon} alt="icon" width={20} loading="lazy" />
@@ -122,7 +122,7 @@ if (!article) {
                                                     <div className="text-[12px] leading-[normal] flex items-center gap-2 text_gray_495 font-[Inter]">
                                                         <span >{card.readTime}</span>
                                                         <div className="w-[6px] h-[6px] bg-white rounded-full"></div>
-                                                        <time datetime={card.date}>{card.date}</time>
+                                                        <time dateTime={card.date}>{card.date}</time>
                                                     </div>
 
                                                 </div>

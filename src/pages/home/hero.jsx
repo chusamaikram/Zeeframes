@@ -191,8 +191,8 @@ export default function HeroSection() {
                             <p className="mt-8 sm:mt-[88px] text-center text-[14px] font-medium uppercase text-[#E7E7E7]">Trusted by Industry Leaders & Fast-Growing Startups</p>
                             <div className="py-5 mt-6 hidden sm:flex  overflow-hidden">
                                 <div className=" slide-track relative py-1 flex shrink-0  items-center justify-between gap-[48px]">
-                                    {companies.map(item => (
-                                        <div key={item.name} className=" ">
+                                    {companies.map((item,index) => (
+                                        <div key={index} className=" ">
                                             <img className="w-full h-full"
                                                 src={item.image} alt={item.name}
                                                 width={item.width}

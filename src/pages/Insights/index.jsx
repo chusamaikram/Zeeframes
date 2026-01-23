@@ -67,7 +67,7 @@ export default function Insights() {
             </section>
 
             <section className="py-8 sm:py-[80px] relative">
-                <div class="absolute z-1 left-6 bottom-0">
+                <div className="absolute z-1 left-6 bottom-0">
                     <img src={Elipse} alt="ellipse" width={1440} height={180} loading="lazy" />
                 </div>
                 <div className="container">

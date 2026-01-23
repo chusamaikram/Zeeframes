@@ -52,8 +52,8 @@ export default function TrendingArticle({TrendingInsight}) {
                             </aside>
                         </div>
                         <div className="grid gap-12 ">
-                            {TrendingInsight.map(card => (
-                                <Link key={card.id} to={card.slug} aria-label="navigation to detail page" className="border-2 border-transparent hover:border-[#F3FE00] rounded-xl transition-colors duration-300 group">
+                            {TrendingInsight.map((card,index) => (
+                                <Link key={index} to={card.slug} aria-label="navigation to detail page" className="border-2 border-transparent hover:border-[#F3FE00] rounded-xl transition-colors duration-300 group">
                                     <div className={`grid grid-cols-1 sm:grid-cols-2  items-center rounded-[12px] sm:h-[218px] sm:h-auto border border-white/20 backdrop-blur `}>
                                         <div className="overflow-hidden rounded-[12px_12px_0_0] sm:rounded-[12px_0_0_12px] w-full h-full">
                                             <img className="w-full h-full object-cover group-hover:scale-105 transition-all duration-300" src={card.thumbnail} alt={card.slug} width={295} height={218} loading="lazy" />
@@ -64,7 +64,7 @@ export default function TrendingArticle({TrendingInsight}) {
                                             <div className="flex items-center gap-2 font-[Inter] text_gray_495 text-[12px] mt-3">
                                                 <span >{card.readTime} min read</span>
                                                 <div className="w-[6px] h-[6px] bg-white rounded-full"></div>
-                                                <time datetime={card.date}>{card.date}</time>
+                                                <time dateTime={card.date}>{card.date}</time>
                                             </div>
 
                                         </div>
