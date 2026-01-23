@@ -1,5 +1,5 @@
 import { useState } from "react";
-import mainvideo from "/videos/mainvideo.mp4";
+
 import { ArrowIcon } from "../../assets/svg";
 import { Link } from "react-router-dom";
 
@@ -25,19 +25,18 @@ export default function VideoSection() {
             {/* Background video */}
             <video
                 className="home-video object-cover w-full h-auto"
-                src={mainvideo}
+                src="/videos/mainvideo.mp4"
                 width={1440}
                 height={766}
                 autoPlay
                 muted
                 loop
                 playsInline
-                preload="metadata"
-            ></video>
+            />
 
             {visible && (
                 <Link
-                to="/work"
+                    to="/work"
                     className=" absolute z-10 bg-white text-black font-semibold px-6 py-3 rounded-full transform -translate-x-1/2 -translate-y-1/2 transition-transform duration-400 ease-out cursor-pointer flex items-center justify-center gap-3"
                     style={{
                         left: `${pos.x}px`,
