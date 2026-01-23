@@ -1,5 +1,5 @@
 import { useState } from "react";
-import mainvideo from "../../assets/videos/mainvideo.mp4";
+import mainvideo from "/videos/mainvideo.mp4";
 import { ArrowIcon } from "../../assets/svg";
 import { Link } from "react-router-dom";
 
@@ -32,7 +32,7 @@ export default function VideoSection() {
                 muted
                 loop
                 playsInline
-                preload="auto"
+                preload="metadata"
             ></video>
 
             {visible && (
